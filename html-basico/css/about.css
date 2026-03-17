@@ -1,18 +1,32 @@
+:root {
+    --font-default: "Datatype", monospace;
+    --font-principal-title: "Archivo Black", sans-serif;
+    --font-secondary-title: "Roboto", sans-serif;
+    --font-secundary-title-weight: 900;
+
+    /*paleta de cores*/
+    --color-primary: #fff
+    --color-bkg-figures: #ddd
+    --color-border: #ccc
+}
+
 body {
     color: #333;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left:auto;
+    font-family: var(--font-default);
     margin-right: auto;
     width: 940px
 }
 h1 {
     background-image:url(../img/sobre-background.jpg);
     padding: 10px;
+    font-family: var(--font-principal-title);
     /* background-repeat: no-repeat;  */
 }
 h2 {
     border-bottom: 2px groove #333;
     margin-top: 30px;
+    font-weight: var(--font-principal-title);
+    font-weight: var(--font-secundary-title-weight);
 }
 figure {
     background-color: #f2eded;
@@ -25,6 +39,7 @@ figure {
 figcaption {
     font-style: italic;
     margin-top: 10px;
+    font-family: var(--font-secondary-title);
 }
 
 p {
