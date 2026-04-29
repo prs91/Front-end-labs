@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/form-grid-seu-cadastro.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Faça seu cadastro!</h1>
+        <p>Compre online 🛒</p>
+    </div>
+
+    <form class="form">
+
+        <div class="section">
+            <h2>Dados Pessoais</h2>
+
+            <label>Nome</label>
+            <input type="text">
+
+            <label>E-mail</label>
+            <input type="email">
+
+            <label>Data de Nascimento</label>
+            <input type="date">
+
+            <label>CPF</label>
+            <input type="text" placeholder="000.000.000-00">
+        </div>
+
+        <div class="section">
+            <h2>Endereço</h2>
+
+            <label>Rua</label>
+            <input type="text">
+
+            <label>Número</label>
+            <input type="number">
+
+            <label>Bairro</label>
+            <input type="text">
+
+            <label>CEP</label>
+            <input type="text" placeholder="00000-000">
+
+            <label>Cidade</label>
+            <input type="text">
+
+            <label>Estado</label>
+            <select>
+                <option>Selecione um estado</option>
+                <option>MG</option>
+                <option>SP</option>
+                <option>RJ</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <h2>Login</h2>
+
+            <label>Imagem de perfil</label>
+            <input type="file">
+
+            <label>Login</label>
+            <input type="text">
+
+            <label>Senha</label>
+            <input type="password">
+
+            <label>Confirmação de Senha</label>
+            <input type="password">
+        </div>
+
+        <div class="buttons">
+            <button type="reset" class="cancelar">Cancelar</button>
+            <button type="submit" class="enviar">Enviar</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Container geral */
+.container {
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #999;
+}
+
+/* Cabeçalho */
+.header {
+    padding: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.header p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Seções */
+.section {
+    background-color: #d8c7b3;
+    padding: 10px;
+    border-top: 2px solid #b5a38f;
+}
+
+/* Títulos das seções */
+.section h2 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Grid do formulário */
+.form {
+    display: grid;
+    gap: 0;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #888;
+    background-color: #eee;
+    font-size: 12px;
+}
+
+/* Labels */
+label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Botões */
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Botão cancelar */
+.cancelar {
+    background-color: #ff5a1f;
+}
+
+/* Botão enviar */
+.enviar {
+    background-color: #2b00ff;
+}
