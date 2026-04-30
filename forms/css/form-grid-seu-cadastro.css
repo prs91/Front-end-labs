@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -5,14 +11,14 @@ body {
     padding: 10px;
 }
 
-/* Container geral */
+/* GERAL*/
 .container {
     max-width: 500px;
     margin: auto;
     border: 1px solid #999;
 }
 
-/* Cabeçalho */
+/*Cabeçalho    */
 .header {
     padding: 10px;
 }
@@ -27,21 +33,19 @@ body {
     font-weight: bold;
 }
 
-/* Seções */
 .section {
     background-color: #d8c7b3;
-    padding: 10px;
+    padding: 1px;
     border-top: 2px solid #b5a38f;
 }
 
-/* Títulos das seções */
 .section h2 {
     margin: 0 0 10px 0;
     font-size: 14px;
     font-weight: bold;
 }
 
-/* Grid do formulário */
+/* Grid do form. */
 .form {
     display: grid;
     gap: 0;
@@ -53,7 +57,7 @@ body {
     gap: 5px;
 }
 
-/* Inputs */
+/* Input*/
 input, select {
     width: 100%;
     padding: 5px;
