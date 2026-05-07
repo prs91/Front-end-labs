@@ -1,0 +1,248 @@
+
+:root {
+    --color-primary: #0f71ff;
+    --color-background: #ecf4ff;
+    --color-text: #36393f;
+    --color-light: #f7f7f7;
+    --color-alert: orange;
+  
+    --font-main: "Poppins", sans-serif;
+  
+    --card-width: 300px;
+    --card-padding: 40px;
+    --card-height: 540px;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    width: var(--card-width);
+    max-width: var(--card-width);
+    height: var(--card-height);
+    padding: var(--card-padding);
+    border-radius: 5px;
+    background-color: white;
+    font-size: 100%;
+    text-align: center;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform: 0.3s ease; 
+}
+
+.card::hover {
+    transform: scale(1.10);
+    text-shadow: 0 4px 20px rgb(186,181,210);
+    box-shadow: 2px 2px 2px black ;
+}
+
+.card h2 {
+    margin: 0;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.card var {
+    color: var(--color-primary);
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    margin-bottom: 10px;
+    transition: font-size 0.3 ease;
+}
+
+.card:hover var {  
+    font-size: 50px;
+}
+
+.card var small {
+    font-size: 16px;
+}
+
+abbr[title] {
+    cursor: help;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin-top: 0;
+}
+
+ul li:first-child {
+    font-weight: 800;
+}
+
+button {
+    display: grid;
+    place-items: center;
+    min-width: 200px;
+    padding: 10px 0;
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    transition: background 0.3s, color 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover button {
+    color: var(--color-light);
+    background: #0f71ff;
+}
+
+.alert {
+    border: 3px solid var(--color-alert);
+}
+
+
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "poppins" , sans serif;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*  Container dos cards 
+body {
+    gap: 18px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+/* Card 
+article {
+    width:260px;
+    background: #f7f7f7;
+    border-radius: 6px;
+    padding: 35px 30px;
+    text-align: center;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+/* Card destaque 
+article:nth-child(2) {
+    border: 2px solid #ffb347;
+}
+
+/* Título 
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #2f2f2f;
+    margin-bottom: 20px;
+}
+
+/* Preço 
+var::before {
+    content: "R$0";
+    display: block;
+    font-size: 52px;
+    color: #2f80ff;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+article:nth-child(2) var::before {
+    content: "R$99";
+  }
+  
+  article:nth-child(3) var::before {
+    content: "R$49";
+  }
+  
+  /* /mês 
+  var::after {
+    content: "/mês";
+    font-size: 18px;
+    color: #2f80ff;
+    margin-left: 4px;
+  }
+  
+  /* Lista 
+  ul {
+    list-style: none;
+    margin: 35px 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    text-align: left;
+  }
+  
+  .material-symbols-outlined {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  li p {
+    font-size: 15px;
+    color: #444;
+  }
+  
+  /* Botão 
+  button {
+    width: 100%;
+    height: 46px;
+    border: 2px solid #2f80ff;
+    background: transparent;
+    color: #2f80ff;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #2f80ff;
+    color: white;
+  }  */
+
+  
