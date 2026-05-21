@@ -126,11 +126,58 @@ button {
     border: 3px solid var(--color-alert);
 }
 
-/*TABLETS*/
-@media (max-width: 1024px) {
+/*SMARTPHONES (<480px) */
+@media screen and (max-width: 479px) {
+
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        padding: 25px 15px;
+        border-radius: 10px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
+    .card var {
+        font-size: 28px;
+    }
+
+    .card:hover var {
+        font-size: 30px;
+    }
+
+    button {
+        width: 100%;
+        min-width: unset;
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    ul li {
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+}
+
+/*TABLET (>480px e <768px)*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
     body {
         gap: 16px;
         padding: 20px;
+        justify-content: center;
     }
 
     .card {
@@ -152,66 +199,31 @@ button {
     }
 }
 
-/*SMARTPHONES*/
-@media (max-width: 768px) {
+/* DESKTOPS / TELAS GRANDES (>768px)*/
+@media screen and (min-width: 768px) {
+
     body {
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 20px 10px;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-        padding: 30px 20px;
-    }
-
-    .card var {
-        font-size: 32px;
-    }
-
-    .card:hover var {
-        font-size: 36px;
-    }
-
-    button {
-        width: 100%;
-        min-width: unset;
-    }
-
-    ul li {
+        flex-direction: row;
         justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
     }
-}
 
-/*TELAS MUITO PEQUENAS*/
-@media (max-width: 480px) {
     .card {
-        padding: 25px 15px;
-        border-radius: 10px;
-    }
-
-    .card h2 {
-        font-size: 22px;
+        width: var(--card-width);
+        height: var(--card-height);
     }
 
     .card var {
-        font-size: 28px;
+        font-size: 40px;
     }
 
     .card:hover var {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     button {
-        font-size: 14px;
-        padding: 12px 0;
-    }
-
-    ul li {
-        font-size: 14px;
+        min-width: 200px;
     }
 }

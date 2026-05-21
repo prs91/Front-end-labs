@@ -114,3 +114,138 @@ input[type=reset]:hover {
     color: #333;
     font-size: 15px;
 }
+
+/* SMARTPHONE (<480px) */
+@media screen and (max-width: 479px) {
+
+    body {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    header p {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    label {
+        width: 100%;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input[type=submit],
+    input[type=reset] {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .footer-contact {
+        font-size: 13px;
+    }
+}
+
+/* TABLET (>480px e <768px)*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    label {
+        width: 100%;
+        padding: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+    }
+
+    .btn-container {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    input[type=submit],
+    input[type=reset] {
+        min-width: 150px;
+    }
+}
+
+/* DESKTOPS/TELAS GRANDES (>768px)*/
+@media screen and (min-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 900px;
+        padding: 40px;
+    }
+
+    .form-group {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    label {
+        width: 25%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 75%;
+    }
+
+    .btn-container {
+        justify-content: flex-end;
+    }
+}
